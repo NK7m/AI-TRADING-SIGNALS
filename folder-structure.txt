@@ -1,0 +1,15 @@
+ai-trading-bot/
+│
+├── data/                  # Historical & real-time data
+├── models/                # Saved ML/NLP models
+├── signals/               # Signal generation logic
+├── indicators/            # Technical indicator calculations
+├── sentiment/             # News & social sentiment analysis
+├── risk/                  # Risk management module
+├── backtest/              # Backtesting & paper trading
+├── delivery/              # Discord/Telegram/web integration
+├── dashboard/             # (Optional) Web dashboard
+├── utils/                 # Helper functions, config, logging
+├── main.py                # Entry point
+├── requirements.txt
+└── README.md
