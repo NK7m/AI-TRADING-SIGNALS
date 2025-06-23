@@ -1,1 +1,0 @@
-pip install yfinance talib numpy pandas transformers newsapi matplotlib tensorflow scikit-learn python-telegram-bot requests
