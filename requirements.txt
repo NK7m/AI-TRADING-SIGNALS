@@ -1,0 +1,44 @@
+# AI Trading Signals Bot Dependencies
+
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Async HTTP
+httpx==0.25.2
+aiohttp==3.9.1
+
+# Scheduling
+apscheduler==3.10.4
+
+# Data Sources
+yfinance==0.2.28
+pandas==2.1.4
+numpy==1.24.4
+
+# AI/LLM
+google-generativeai==0.3.2
+
+# Discord
+discord.py==2.3.2
+
+# Configuration
+pyyaml==6.0.1
+python-dotenv==1.0.0
+
+# Logging
+loguru==0.7.2
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx==0.25.2
+
+# Development
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+
