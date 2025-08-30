@@ -1,0 +1,49 @@
+app:
+  timezone: "Asia/Kolkata"
+  log_level: "INFO"
+  neutral_heartbeat_minutes: 30
+  min_confidence_tag: 0.75
+  role_mention:
+    mode: "name"   # "name" or "id"
+    value: "@traders"  # or role id like "123456789012345678"
+
+discord:
+  mode: "webhook"  # or "bot"
+  webhook_url: "${DISCORD_WEBHOOK_URL}"
+  bot_token: "${DISCORD_BOT_TOKEN}"
+  channel_id: "${DISCORD_CHANNEL_ID}"
+  embeds: true
+
+llm:
+  provider: "gemini"
+  model: "gemini-1.5-pro"   # or latest stable
+  api_key: "${GEMINI_API_KEY}"   # load from env or replace here
+  request_timeout_seconds: 30
+  max_retries: 2
+
+data:
+  default_interval: "15m"
+  bars: 300
+  sources:
+    - symbol: "BTCUSDT"
+      kind: "binance"
+      interval: "15m"
+    - symbol: "AAPL"
+      kind: "yfinance"
+      interval: "15m"
+  news:
+    enabled: false
+    provider: "none"
+
+tradingview:
+  link: ""   # paste a TV chart/idea URL to parse; leave blank to ignore
+  allow_webhook: true
+
+server:
+  host: "0.0.0.0"
+  port: 8080
+
+metrics:
+  enabled: true
+  path: "/metrics"
+
